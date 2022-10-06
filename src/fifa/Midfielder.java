@@ -3,20 +3,30 @@ package fifa;
 public class Midfielder {
     private String name;
     private MidPositions position;
-    private Paramet paramets;
-    private String national;
+    private String nation;
     private String club;
     private boolean weakFoot;
     private int skillMoves;
 
 
-    public Midfielder(String name,  MidPositions position, Paramet paramets, String national, String club, boolean weakFoot, int skillMoves) {
+    public Midfielder(String name,  MidPositions position, String nation, String club, boolean weakFoot, int skillMoves) {
         this.name = name;
         this.position = position;
-        this.paramets = paramets;
-        this.national = national;
+        this.nation = nation;
         this.club = club;
         this.weakFoot = weakFoot;
         this.skillMoves = skillMoves;
+    }
+
+    @Override
+    public String toString() {
+        return "Midfielder{" +
+                "name='" + name + '\'' +
+                ", position=" + position +
+                ", nation='" + nation + '\'' +
+                ", club='" + club + '\'' +
+                ", weakFoot=" + weakFoot +
+                ", skillMoves=" + skillMoves +
+                '}';
     }
 }
