@@ -15,7 +15,14 @@ public class Defender {
     private int DEF;
     private int PHY;
 
-
+    public Defender(int PAC, int SHO, int PAS, int DRI, int DEF, int PHY) {
+        this.PAC = PAC;
+        this.SHO = SHO;
+        this.PAS = PAS;
+        this.DRI = DRI;
+        this.DEF = DEF;
+        this.PHY = PHY;
+    }
 
     public Defender(String name, DefPositions position, String national, String club, boolean weakFoot, int skillMoves) {
         this.name = name;
