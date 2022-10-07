@@ -8,7 +8,7 @@ public class Goalkeeper {
     private boolean weakFoot;
     private int skillMoves;
 
-    public Goalkeeper(int rating, String name, String national, String club, boolean weakFoot, int skillMoves) {
+    public Goalkeeper(int rating, String name, String nation, String club, boolean weakFoot, int skillMoves) {
         this.rating = rating;
         this.name = name;
         this.nation = nation;
