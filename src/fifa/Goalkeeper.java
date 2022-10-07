@@ -43,7 +43,7 @@ public class Goalkeeper {
 
     @Override
     public String toString() {
-        return "Kapus : " + name +" " + nation +" " +club+" " + weakFoot + " " + skillMoves;
-                
+        return "Kapus : " + name +" " + nation +" " +club+" " + weakFoot +  " " + skillMoves;
+
     }
 }
