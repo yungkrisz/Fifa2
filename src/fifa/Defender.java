@@ -2,34 +2,51 @@ package fifa;
 
 public class Defender {
     private String name;
-    private DefPositions position;
-    private String national;
+    private int rating;
+    private AttPositions position;
+    private String nation;
     private String club;
     private boolean weakFoot;
     private int skillMoves;
 
-    private int PAC;
-    private int SHO;
-    private int PAS;
-    private int DRI;
-    private int DEF;
-    private int PHY;
-
-    public Defender(int PAC, int SHO, int PAS, int DRI, int DEF, int PHY) {
-        this.PAC = PAC;
-        this.SHO = SHO;
-        this.PAS = PAS;
-        this.DRI = DRI;
-        this.DEF = DEF;
-        this.PHY = PHY;
-    }
-
-    public Defender(String name, DefPositions position, String national, String club, boolean weakFoot, int skillMoves) {
+    public Defender(String name, int rating, AttPositions position, String nation, String club, boolean weakFoot, int skillMoves) {
         this.name = name;
+        this.rating = rating;
         this.position = position;
-        this.national = national;
+        this.nation = nation;
         this.club = club;
         this.weakFoot = weakFoot;
         this.skillMoves = skillMoves;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public int getRating(){
+        return rating;
+    }
+    public AttPositions getPosition() {
+        return position;
+    }
+
+    public String getNation() {
+        return nation;
+    }
+
+    public String getClub() {
+        return club;
+    }
+
+    public boolean isWeakFoot() {
+        return weakFoot;
+    }
+
+    public int getSkillMoves() {
+        return skillMoves;
+    }
+
+    @Override
+    public String toString() {
+        return "Védekező : " + name + rating + position + nation + club + weakFoot + skillMoves;
     }
 }
