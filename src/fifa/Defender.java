@@ -47,6 +47,6 @@ public class Defender {
 
     @Override
     public String toString() {
-        return "Védekező : " + name + rating + position + nation + club + weakFoot + skillMoves;
+        return "Védekező : " + name + " " + rating + " " + position + " " + nation + " " + club + " " + weakFoot + " " + skillMoves;
     }
 }
