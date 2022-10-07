@@ -47,6 +47,6 @@ public class Attacker {
 
     @Override
     public String toString() {
-        return "Támadó : " + name + rating + position + nation + club + weakFoot + skillMoves;
+        return "Támadó : " + name + " " + rating + " " + position + " " + nation + " " + club + " " + weakFoot + " " + skillMoves;
     }
 }

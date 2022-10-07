@@ -3,13 +3,13 @@ package fifa;
 public class Defender {
     private String name;
     private int rating;
-    private AttPositions position;
+    private DefPositions position;
     private String nation;
     private String club;
     private boolean weakFoot;
     private int skillMoves;
 
-    public Defender(String name, int rating, AttPositions position, String nation, String club, boolean weakFoot, int skillMoves) {
+    public Defender(String name, int rating, DefPositions position, String nation, String club, boolean weakFoot, int skillMoves) {
         this.name = name;
         this.rating = rating;
         this.position = position;
@@ -25,7 +25,7 @@ public class Defender {
     public int getRating(){
         return rating;
     }
-    public AttPositions getPosition() {
+    public DefPositions getPosition() {
         return position;
     }
 
@@ -47,6 +47,6 @@ public class Defender {
 
     @Override
     public String toString() {
-        return "Védekező : " + name + rating + position + nation + club + weakFoot + skillMoves;
+        return "Védekező : " + name + " " + rating + " " + position + " " + nation + " " + club + " " + weakFoot + " " + skillMoves;
     }
 }
