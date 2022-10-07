@@ -3,7 +3,7 @@ package fifa;
 public class Goalkeeper {
     private int rating;
     private String name;
-    private String national;
+    private String nation;
     private String club;
     private boolean weakFoot;
     private int skillMoves;
@@ -11,7 +11,7 @@ public class Goalkeeper {
     public Goalkeeper(int rating, String name, String national, String club, boolean weakFoot, int skillMoves) {
         this.rating = rating;
         this.name = name;
-        this.national = national;
+        this.nation = nation;
         this.club = club;
         this.weakFoot = weakFoot;
         this.skillMoves = skillMoves;
@@ -26,7 +26,7 @@ public class Goalkeeper {
     }
 
     public String getNational() {
-        return national;
+        return nation;
     }
 
     public String getClub() {
@@ -41,4 +41,9 @@ public class Goalkeeper {
         return skillMoves;
     }
 
+    @Override
+    public String toString() {
+        return "Kapus : " + name + nation + club+ weakFoot + skillMoves;
+                
+    }
 }
