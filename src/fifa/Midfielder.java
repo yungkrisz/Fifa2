@@ -20,13 +20,6 @@ public class Midfielder {
 
     @Override
     public String toString() {
-        return "Midfielder{" +
-                "name='" + name + '\'' +
-                ", position=" + position +
-                ", nation='" + nation + '\'' +
-                ", club='" + club + '\'' +
-                ", weakFoot=" + weakFoot +
-                ", skillMoves=" + skillMoves +
-                '}';
+        return "Középpályás : " + name + position + nation + club + weakFoot + skillMoves;
     }
 }

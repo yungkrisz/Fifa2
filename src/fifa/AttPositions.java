@@ -7,4 +7,5 @@ public enum AttPositions {
     LF,
     RW,
     LW;
+
 }
