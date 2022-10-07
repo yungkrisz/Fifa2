@@ -5,6 +5,7 @@ public enum AttPositions {
     CF,
     RF,
     LF,
-    RW;
+    RW,
+    LW;
 
 }
