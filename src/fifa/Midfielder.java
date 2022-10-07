@@ -50,6 +50,6 @@ public class Midfielder {
 
     @Override
     public String toString() {
-        return "Középpályás : " + name + rating + position + nation + club + weakFoot + skillMoves;
+        return "Középpályás : " + name + " " + rating + " " + position + " " + nation + " " + club + " " + weakFoot + " " + skillMoves;
     }
 }
